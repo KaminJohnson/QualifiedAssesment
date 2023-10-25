@@ -7,7 +7,7 @@ function findAccountById(accounts, id) {
 function sortAccountsByLastName(accounts) {
   // YOUR SOLUTION HERE
   // Hint: You can use the [`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method here. 
-  accounts.sort((a, b) => a.name.last.toLowerCase() > b.name.last.toLowerCase() ? 1 : -1);
+  accounts.sort((left, right) => left.name.last.toLowerCase() > right.name.last.toLowerCase() ? 1 : -1);
   return accounts;
 }
 
